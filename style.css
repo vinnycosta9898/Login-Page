@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+    
+}
+
+.title{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 22px;
+    font-family: Poppins, sans-serif;
+}
+
+.form-control label{ 
+    font-size: 2rem;
+    font-family: Poppins;
+    margin: 30px 50px;
+}
+
+.form-control input{
+    width: 300px;
+    height: 40px;
+    display: block;
+    margin: 20px 50px;
+}
+
+
+.form button{
+    width: 300px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 5%;
+    margin: 10px 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+.form-control i{
+    position: absolute;
+    top: 200px;
+    left: 405px;
+    visibility: hidden;
+}
+
+.form-control small{
+    position: absolute;
+    left: 100px;
+    top: 230px;
+    visibility: hidden;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
