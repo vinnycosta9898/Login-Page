@@ -17,7 +17,7 @@ body{
     display: flex;
     align-items: center;
     padding: 100px 50px;
-    
+    overflow: hidden;
 }
 
 .title{
@@ -26,6 +26,10 @@ body{
     left: 10%;
     font-size: 22px;
     font-family: Poppins, sans-serif;
+}
+
+.form-control {
+    position: relative;
 }
 
 .form-control label{ 
@@ -41,7 +45,6 @@ body{
     margin: 20px 50px;
 }
 
-
 .form button{
     width: 300px;
     height: 50px;
@@ -54,15 +57,15 @@ body{
 
 .form-control i{
     position: absolute;
-    top: 200px;
-    left: 405px;
+    top: 80px;
+    left: 355px;
     visibility: hidden;
 }
 
 .form-control small{
     position: absolute;
     left: 100px;
-    top: 230px;
+    top: 110px;
     visibility: hidden;
 }
 
@@ -89,3 +92,50 @@ body{
   color: #e74c3c;
 }
 
+@media(max-width: 900px){
+    .container{
+        width: 55vw;
+    }
+}
+
+@media(max-width: 868px){
+    .container{
+        width: 60vw;
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 744px){
+    .container{
+        width: 65vw;
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 694px){
+    .container{
+        width: 70vw;
+        flex-wrap: no-wrap;
+    }
+}
+
+@media(max-width: 650px){
+    .container{
+        width: 75vw;
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 610px){
+    .container{
+        width: 80vw;
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 577px){
+    .container{
+        width: 100vw;
+        flex-wrap: nowrap;
+    }
+}
